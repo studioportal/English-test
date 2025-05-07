@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Proficiency Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="active">
+            <h1>English Proficiency Test</h1>
+            <p>This test will evaluate your English skills in five areas:</p>
+            <ul>
+                <li>Grammar</li>
+                <li>Vocabulary</li>
+                <li>Listening</li>
+                <li>Writing</li>
+                <li>Speaking</li>
+            </ul>
+            <p>You will have 7 minutes to complete the test.</p>
+            <button id="start-test" class="btn">Start Test</button>
+        </div>
+
+        <div id="test-container" class="hidden">
+            <div class="test-header">
+                <div class="timer" id="timer">07:00</div>
+            </div>
+            <!-- Test sections will be loaded here dynamically -->
+        </div>
+
+        <div id="results-screen" class="hidden">
+            <h1>Test Results</h1>
+            <div id="results-summary">
+                <!-- Results will be displayed here -->
+            </div>
+            <div class="level-result">
+                <p>Your English level is: <span id="level-indicator"></span></p>
+            </div>
+            <button id="restart-test" class="btn">Take Test Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
